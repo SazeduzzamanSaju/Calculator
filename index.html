@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body onload="initClock()">
     <section>
         <div class="container mt-3 mb-3" >
             
@@ -36,7 +36,11 @@
                                 <img src="logo.png" alt="" class="image">
                             </div>
                             <div class="col-md-4">
-                                <p class="time">9:41pm</p>
+                                <div class="time">
+                                    <span id="hours">00</span> :
+                                    <span id="minutes">00</span>
+                                    <span id="period">AM</span>
+                                </div>
                             </div>
                         </div>
                         
